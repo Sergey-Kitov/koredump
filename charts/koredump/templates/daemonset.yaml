@@ -57,6 +57,8 @@ spec:
               value: "{{ .Values.ports.daemonSet }}"
             - name: DAEMONSET
               value: "1"
+            - name: NO_TOKENS
+              value: "1"
           volumeMounts:
             - mountPath: /tmp
               name: tmp-volume
